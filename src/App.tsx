@@ -1,25 +1,37 @@
-import React from 'react';
+import { StateInterface } from './context/globalTypes';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Products from './components/Products';
+import Cart from 'components/Cart';
+
+
+
 
 function App() {
+  const [query, setQuery] = useState('');
+  const [isSearchActive, setIsSearchActive] = useState(false);
+  const [state, setState] = useState<StateInterface>({
+    products:[]
+  })
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+    
+ 
+    <Header />
+    
+    <Cart  />
+  
+    <Products query={query} setQuery={setQuery} isSearchActive={isSearchActive}  />
+    
+    <Footer />
+    
+    </>
   );
 }
 
