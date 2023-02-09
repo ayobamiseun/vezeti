@@ -21,11 +21,4 @@
     justify-content: space-between;
   }
   
-  .circle {
-    color: gray;
-    transition: transform 0.2s linear;
-  }
-  
-  .circle:hover {
-    transform: rotate(90deg);
-  }
+ 

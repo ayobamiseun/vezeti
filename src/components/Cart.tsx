@@ -23,14 +23,7 @@ const Cart: React.FC = () => {
     <>
       {showCart && (
         <div className="main">
-          <div style={{ textAlign: "right" }}>
-            <a
-              style={{ cursor: "pointer" }}
-              
-              aria-hidden="true"
-              onClick={showHideCart}
-            ></a>
-          </div>
+         
           <div className="cartW">
             {cartItems.length === 0 ? (
               <h4>Cart is Empty</h4>
