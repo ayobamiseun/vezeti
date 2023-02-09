@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import CartContext from "../context/cart/CartContext";
 import CartItem from "./CartItem";
-import BsCircle from "react-script
+import BsCircle from "react-icons/bs"
 interface CartProps {
   showCart: boolean;
   cartItems: CartItemData[];
