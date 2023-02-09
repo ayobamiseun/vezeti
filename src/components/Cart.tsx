@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import CartContext from "../context/cart/CartContext";
 import CartItem from "./CartItem";
-
+import BsCircle from "react-script
 interface CartProps {
   showCart: boolean;
   cartItems: CartItemData[];
@@ -24,12 +24,12 @@ const Cart: React.FC = () => {
       {showCart && (
         <div className="main">
           <div style={{ textAlign: "right" }}>
-            <i
+            <a
               style={{ cursor: "pointer" }}
-              className="fa fa-times-circle"
+              
               aria-hidden="true"
               onClick={showHideCart}
-            ></i>
+            ></a>
           </div>
           <div className="cartW">
             {cartItems.length === 0 ? (

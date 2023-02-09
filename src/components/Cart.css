@@ -21,11 +21,11 @@
     justify-content: space-between;
   }
   
-  .fa-times-circle {
+  .circle {
     color: gray;
     transition: transform 0.2s linear;
   }
   
-  .fa-times-circle:hover {
+  .circle:hover {
     transform: rotate(90deg);
   }
