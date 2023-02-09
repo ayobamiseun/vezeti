@@ -2,20 +2,19 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import CartContext from "../context/cart/CartContext";
 import CartItem from "./CartItem";
-import {BsCircle} from "react-icons/bs"
+
 interface CartProps {
   showCart: boolean;
   cartItems: CartItemData[];
   showHideCart: () => void;
-  
 }
 interface CartItemData {
-    id: string;
-    price: number;
-    image: string;
-    name: string;
-  }
-  
+  id: string;
+  price: number;
+  image: string;
+  name: string;
+}
+
 const Cart: React.FC = () => {
   const { showCart, cartItems, showHideCart }: any = useContext(CartContext);
 
@@ -23,7 +22,6 @@ const Cart: React.FC = () => {
     <>
       {showCart && (
         <div className="main">
-         
           <div className="cartW">
             {cartItems.length === 0 ? (
               <h4>Cart is Empty</h4>
