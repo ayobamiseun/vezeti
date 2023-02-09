@@ -1,7 +1,7 @@
-.CartItem__item {
+.CartItem {
     border-bottom: 1px solid gray;
-    padding: 100px 0;
-    margin-top: 100px;
+    padding: 30px 0;
+    margin-top: 20px;
   }
   
   li {
@@ -17,11 +17,11 @@
     width: 100px;
     object-fit: cover;
   }
-  .CartItem__item:nth-child(1) {
+  .CartItem:nth-child(1) {
     border-top: 1px solid gray;
   }
   
-  .CartItem__button {
+  .CartClick {
     margin-left: auto;
     padding: 40px 8px;
     border-radius: 4px;
@@ -30,8 +30,8 @@
     color: #000;
   }
   
-  .CartItem__button:focus,
-  .CartItem__button:active {
+  .CartClick:focus,
+  .CartClick:active {
     outline: none;
   }
 

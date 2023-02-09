@@ -12,7 +12,7 @@ interface State {
  
 }
 
-// @ts-ignore
+
 const Search:  React.FC<State> = () =>  {
 //   const [state, setState] = useState<State>({
 //     query: '',
@@ -66,7 +66,7 @@ const Search:  React.FC<State> = () =>  {
     </form>
         {query === '' ? "search for item" : !list.length ? "Your query did not return any results" : (
           list.map((item) => {
-            //@ts-ignore
+        
             return  <SearchResult  item={item} />;
 
             

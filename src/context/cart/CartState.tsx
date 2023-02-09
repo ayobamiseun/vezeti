@@ -5,11 +5,14 @@ import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM } from "../Types";
 
 interface CartStateProps {
   children: React.ReactNode;
+ 
 }
 
 interface CartState {
   showCart: boolean;
   cartItems: Array<any>;
+ 
+
 }
 
 const CartState: React.FC<CartStateProps> = ({ children }) => {

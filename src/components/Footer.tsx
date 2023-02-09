@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
-import './Footer.css';
+import React, { FC } from "react";
+import "./Footer.css";
 
 interface Props {}
 
 const Footer: FC<Props> = () => {
   return (
-    <div>    
+    <div>
       <div className="footer">
         <div className="inner-footer">
           <div className="footer-items">
@@ -14,7 +14,7 @@ const Footer: FC<Props> = () => {
           </div>
           <div className="footer-items">
             <h3>Quick Links</h3>
-            <div className="border1"></div> 
+            <div className="border1"></div>
             <ul>
               <a href="#">
                 <li>Home</li>
@@ -32,7 +32,7 @@ const Footer: FC<Props> = () => {
           </div>
           <div className="footer-items">
             <h3>Stores</h3>
-            <div className="border1"></div>  
+            <div className="border1"></div>
             <ul>
               <a href="#">
                 <li>Shoe</li>
@@ -64,13 +64,10 @@ const Footer: FC<Props> = () => {
                 <i className="fa fa-envelope" aria-hidden="true"></i>
                 xyz@gmail.com
               </li>
-            </ul> 
-            
+            </ul>
           </div>
         </div>
-        <div className="footer-bottom">
-          Copyright &copy; Vezeti 2022.
-        </div>
+        <div className="footer-bottom">Copyright &copy; Vezeti 2022.</div>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
-// @ts-nocheck
 
 import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM } from "../Types";
+import CartState  from "./CartState";
 
-const CartReducer = (state, action) => {
+const CartReducer = (state: CartState, action: any): CartState => {
   switch (action.type) {
     case SHOW_HIDE_CART: {
       return {
@@ -20,7 +20,7 @@ const CartReducer = (state, action) => {
       return {
         ...state,
         cartItems: state.cartItems.filter(
-          (item) => item._id !== action.payload
+          (item:any) => item.id !== action.payload
         ),
       };
     }
